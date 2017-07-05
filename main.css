@@ -1,0 +1,24 @@
+/*=============================
+	Global Styles
+=============================*/
+
+
+
+/*=============================
+	Element Styles
+=============================*/
+body {
+
+	background-color: lightgrey;
+}
+
+article {
+	margin-bottom: 1em;
+}
+
+header {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+
