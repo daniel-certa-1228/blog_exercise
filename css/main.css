@@ -1,0 +1,74 @@
+
+
+/*#381401 - dark maroon
+#383001 - dark yellow
+#24028c - blue
+*/
+
+/*=============================
+	Global Styles
+=============================*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+}
+
+#nav {
+	background-color: #24028c;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 1000;
+	padding: 0;
+	margin: 0;
+	margin-left: -10px;
+	border-bottom: 1px solid #383001;
+}
+
+#blog-logo {
+	max-height: 90px;
+	float:left;
+	margin-left: 5%;
+	margin-bottom: 5px;
+}
+
+.container {
+	max-width: 90%;
+	margin: 110px auto;
+}
+
+article {
+	margin-bottom: 1em;
+	border-bottom: 1px solid black;
+}
+
+header {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+
+
+.center {
+	text-align: center;
+}
+
+.entry-footer {
+	font-style: italic;
+	font-size: .9em;
+}
+
+/*=============================
+	ID Styles
+=============================*/
+
+
+#page-footer {
+	text-align: center;
+}
