@@ -9,7 +9,10 @@ console.log( "blog.js" );
 		for (let i = 0; i < blogObject.length; i++) {
 			let blogPost = blogObject[i]
 			blogArray.push(blogPost);
+
 		};
+
+		BlogSpace.outputToDOM(blogArray);
 	}
 
 	////////////////////////////////////////////////////
@@ -17,20 +20,24 @@ console.log( "blog.js" );
 	BlogSpace.outputToDOM = (blogArray) => {
  
 		let blogArticleDiv = document.getElementById("article-div");
+		// console.log( "blogArticleDiv", blogArticleDiv );
 		blogArticleDiv.innerHTML = "";
+		console.log( "blogArray", blogArray );
 
-		for (let i = 0; i < blogArray.length; i++) {
-			// console.log( "test" );
-			let blogPost = '${blogArray[i].Title}'
+		for (let j = 0; j < blogArray.length; j++) {
 
-			console.log( "blogPost", blogPost );
-			
-			$(blogArticleDiv).prepend(blogPost)
+			let blogCard = `<article class="blog-article" id="blogPost--${j}">
+							<header class="blog-header">${blogArray[j].Title}</header>
+							<section>
+							<p>${blogArray[j].Content}</p>
+							</section>
+							<footer class="entry-footer">Posted by <strong>${blogArray[j].Author}</strong> on ${blogArray[j].Timestamp}</footer>
+							<footer class="keyword-footer"><strong>Keywords: </strong>${blogArray[j].Keywords}</footer>`
+
+				$(blogArticleDiv).prepend(blogCard);
 
 		};
 
 	}
-
-	BlogSpace.outputToDOM(blogArray);
 
 }

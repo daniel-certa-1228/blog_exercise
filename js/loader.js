@@ -20,12 +20,12 @@ console.log( "loader.jd" );
 			blogObject = JSON.parse(event.target.responseText); 
 			// console.log( "blogObject", blogObject );
 			BlogSpace.passJSON(blogObject)
-			// body...
+			
 		}
 
 		function blogLoaderFailed (event) {
 			console.log( "BlogLoader Failed" );
-			// body...
+		
 		}
 	}
 
