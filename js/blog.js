@@ -2,7 +2,7 @@ console.log( "blog.js" );
 
 {
 	let blogArray = [];
-	console.log( "blogArray", blogArray );
+	// console.log( "blogArray", blogArray );
 
 	BlogSpace.passJSON = (blogObject) => {
 
@@ -15,6 +15,11 @@ console.log( "blog.js" );
 		BlogSpace.outputToDOM(blogArray);
 	}
 
+	BlogSpace.passNewBlogObject = (addBlogObject) => {
+		blogArray.push(addBlogObject);
+		BlogSpace.outputToDOM(blogArray);
+	}
+
 	////////////////////////////////////////////////////
 
 	BlogSpace.outputToDOM = (blogArray) => {
@@ -22,7 +27,7 @@ console.log( "blog.js" );
 		let blogArticleDiv = document.getElementById("article-div");
 		// console.log( "blogArticleDiv", blogArticleDiv );
 		blogArticleDiv.innerHTML = "";
-		console.log( "blogArray", blogArray );
+		// console.log( "blogArray", blogArray );
 
 		for (let j = 0; j < blogArray.length; j++) {
 
