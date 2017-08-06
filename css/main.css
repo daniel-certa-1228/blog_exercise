@@ -1,6 +1,6 @@
 
 
-/*#381401 - dark maroon
+/*#632300 - dark maroon
 #383001 - dark yellow
 #24028c - blue
 */
@@ -39,7 +39,7 @@ body {
 	z-index: 1000;
 	padding: 0;
 	margin: 0;
-	border-bottom: 5px solid #381401;
+	border-bottom: 5px solid #632300;
 }
 
 #blog-logo {
@@ -88,7 +88,7 @@ article {
 }
 
 article:nth-child(odd) {
-	background-color: rgba(56, 48, 1, .2);
+	background-color: rgba(99, 35, 0, .1);
 }
 
 /*article:nth-last-child(1) {

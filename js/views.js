@@ -22,7 +22,7 @@ console.log( "views.js" );
 		articleDiv.classList.remove("hidden")
 	}
 
-		BlogSpace.addView = () => {
+	BlogSpace.addView = () => {
 		addBlogEntry.classList.remove("hidden")
 		articleDiv.classList.add("hidden")
 	}

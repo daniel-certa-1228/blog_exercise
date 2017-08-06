@@ -24,7 +24,7 @@ console.log( "add.js" );
 									"Content": blogContentField.value,
 									"Timestamp": blogTimestamp,
 									"Keywords" : blogKeywordsField.value
-								};
+									};
 
 								BlogSpace.passNewBlogObject(addBlogObject);
 								BlogSpace.listView();
