@@ -20,6 +20,11 @@
 body {
 	background-color: #fff;
 	font-family: 'Arial', sans-serif;
+	
+}
+
+.main {
+	position: relative;
 }
 
 #nav {
@@ -66,7 +71,12 @@ body {
 
 .container {
 	max-width: 90%;
-	margin: 110px auto;
+	margin: 110px auto 0;
+	/*margin-bottom: 50px;*/
+}
+
+#article-div {
+	/*margin-bottom: 50px*/
 }
 
 
@@ -80,6 +90,10 @@ article {
 article:nth-child(odd) {
 	background-color: rgba(56, 48, 1, .2);
 }
+
+/*article:nth-last-child(1) {
+	margin-bottom: 100px;
+}*/
 
 header {
 	font-size: 1.5em;
@@ -126,9 +140,20 @@ header {
 	background-color: #e6f913;
 }
 
+#spacer {
+	height: 70px;
+}
 
 #page-footer {
 	text-align: center;
+	background-color: #24028c;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	margin-bottom: -20px !important;
+
 }
 /*=============================
 	Generic Display Options
