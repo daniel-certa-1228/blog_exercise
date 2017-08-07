@@ -107,9 +107,20 @@ header {
 	margin-bottom: 5px;
 }
 
+.deleteBtn {
+	background: white;
+	color: red;
+	margin-top: 5px;
+}
+
+.deleteBtn:hover {
+	background: red;
+	color: white;
+}
+
 #add-entry {
 	margin: 0 auto;
-	background-color: rgba(56, 20, 1, .8);
+	background-color: #632300;
 	padding: 1em;
 	border-radius: 20px;
 	color: white;

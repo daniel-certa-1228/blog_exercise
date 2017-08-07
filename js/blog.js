@@ -37,7 +37,9 @@ console.log( "blog.js" );
 							<p>${blogArray[j].Content}</p>
 							</section>
 							<footer class="entry-footer">Posted by <strong>${blogArray[j].Author}</strong> on ${blogArray[j].Timestamp}</footer>
-							<footer class="keyword-footer"><strong>Keywords: </strong>${blogArray[j].Keywords}</footer>`
+							<footer class="keyword-footer"><strong>Keywords: </strong>${blogArray[j].Keywords}</footer>
+							<button type="button" class="deleteBtn" 
+							id="deleteBtn--${j}">Delete Post</button>`
 
 				$(blogArticleDiv).prepend(blogCard);
 

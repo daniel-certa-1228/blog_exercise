@@ -1,4 +1,4 @@
-console.log( "loader.jd" );
+console.log( "loader.js" );
 
 {
 	var BlogSpace = {}
