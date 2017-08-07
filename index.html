@@ -3,73 +3,77 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Dan's Blog</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Obligatory Blog</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 
-	<body>
+	<body>	
+	<div class="main">
+		<div class="main-nav" id="nav">
+			<div>
+				<img src="img/blog.png" alt="Blog Logo" id="blog-logo">
+			</div>
+			<div>
+				<ul id="nav-ul">
+					<li>
+						<a href="#" id="listView">Blog List</a>
+					</li>
+					<li>
+						<a href="#" id="addView">Add Blog Entry</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
 		<div class="container">
 
-			<div class="center">
-				<h1>Dan's Blog</h1>
+			<div id="article-div">
+
 			</div>
-			<article class="blog-article">
-				<header>COBOL</header>
+
+			<div id="add-entry" class="hidden">
+				
 					<section>
-						<p>COBOL (/ˈkoʊbɒl/, an acronym for common business-oriented language) is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments. COBOL is still widely used in legacy applications deployed on mainframe computers, such as large-scale batch and transaction processing jobs. But due to its declining popularity and the retirement of experienced COBOL programmers, programs are being migrated to new platforms, rewritten in modern languages or replaced with software packages.  Most programming in COBOL is now purely to maintain existing applications.</p>
-
-						<p>COBOL was designed in 1959 by CODASYL and was partly based on previous programming language design work by Grace Hopper, commonly referred to as "the (grand)mother of COBOL".  It was created as part of a US Department of Defense effort to create a portable programming language for data processing. Intended as a stopgap, the Department of Defense promptly forced computer manufacturers to provide it, resulting in its widespread adoption.[11] It was standardized in 1968 and has since been revised four times. Expansions include support for structured and object-oriented programming. The current standard is ISO/IEC 1989:2014.</p>
+						<label for="blog-title">Title:</label><br>
+						<input type="text" id="blog-title">
 					</section>
-				<footer class="entry-footer">Posted by <strong>Dan</strong> on 07.05.2017 at 10:05pm</footer> 
-			</article>
-
-			<article class="blog-article">
-				<header>André the Giant</header>
 					<section>
-						<p>André René Roussimoff (May 19, 1946 – January 27, 1993), best known as André the Giant, was a French professional wrestler and actor.</p>
-
-						<p>He famously feuded with Hulk Hogan, culminating at WrestleMania III. His best-remembered film role was that of Fezzik, the giant in The Princess Bride. His size was a result of gigantism caused by excess growth hormone, which later resulted in acromegaly. It also led to him being called "The Eighth Wonder of the World".</p>
-
-						<p>In the World Wrestling Federation (WWF, now known as WWE), André was a one-time WWF World Heavyweight Champion and a one-time WWF Tag Team Champion. In 1993, André was the inaugural inductee into the WWE Hall of Fame.</p>
+						<label for="blog-author">Author:</label><br>
+						<input type="text" id="blog-author">
 					</section>
-				<footer class="entry-footer">Posted by <strong>Dan</strong> on 07.05.2017 at 7:55pm</footer>
-			</article>
-
-			<article class="blog-article">
-				<header>Mutually Assured Destruction</header>
 					<section>
-						<p>Mutual assured destruction or mutually assured destruction (MAD) is a doctrine of military strategy and national security policy in which a full-scale use of nuclear weapons by two or more opposing sides would cause the complete annihilation of both the attacker and the defender (see pre-emptive nuclear strike and second strike).  It is based on the theory of deterrence, which holds that the threat of using strong weapons against the enemy prevents the enemy's use of those same weapons. The strategy is a form of Nash equilibrium in which, once armed, neither side has any incentive to initiate a conflict or to disarm.</p>
+						<label for="blog-content">Entry:</label>	<br>
+						<textarea id="blog-content" placeholder="Blog entry here..."></textarea>
 					</section>
-				<footer class="entry-footer">Posted by <strong>Dan</strong> on 07.05.2017 at 5:59pm</footer>
-			</article>		
-
-			<article class="blog-article">
-				<header>Helen Reddy</header>
 					<section>
-						<p>Helen Maxine Lamond Reddy (born 25 October 1941) is an Australian singer, actress and activist. In the 1970s, she enjoyed international success, especially in the United States, where she placed 15 singles in the Top 40 of the Billboard Hot 100. Six made the Top 10 and three reached No. 1, including her signature hit "I Am Woman".  She is often referred to as the "Queen of '70s Pop".</p>
-
-						<p>Reddy placed 25 songs on the Billboard Adult Contemporary chart; 15 made the Top 10 and eight reached No. 1, six consecutively. In 1974, at the inaugural American Music Awards, she became the first artist to win the award for Favorite Pop/Rock Female Artist. She was the first Australian to have three No. 1 hits in the same year. In television, she was the first Australian to host her own one-hour weekly primetime variety show on an American network, along with several specials that were seen in more than 40 countries.</p>
+						<label for="blog-keywords">Keywords (Optional):</label><br>
+						<input type="text" id="blog-keywords">
 					</section>
-				<footer class="entry-footer">Posted by <strong>Dan</strong> on 07.05.2017 at 3:30pm</footer>
-			</article>		
 
-			<article class="blog-article">
-				<header>Flowbee</header>
-					<section>
-						<p>The Flowbee is an electrically powered vacuum cleaner attachment made for cutting hair. It was developed and filed for patent in 1986 by Rick E. Hunts, a San Diego, California carpenter. US patent 4679322 was granted in 1987 and the product marketed since 1988. Hunt initially sold the Flowbees out of his garage before finding success with live demonstrations at a county fair. The product was advertised as being capable of performing "hundreds of precision layered haircuts" in frequently aired late-night television infomercials. By 2000, two million Flowbees had been sold.</p>
-
-						<p>The Flowbee can also be used to groom dogs with long hair such as Maltese or Bichon Frisé with a special pet grooming attachment which is sold separately. Previously, a special green-colored Flowbee Pet Groomer variant of the device was available.</p>
-
-						<p>Over the years, the Flowbee device saw at least three revisions which can be identified by the shape and labeling of the cutting head ("Vac-u-cut", "Flowbee Int.", "Flowbee.com"). It is still being manufactured and sold via their factory direct website and various outlets across the Internet. The Flowbee factory is located in Flour Bluff, a suburb of Corpus Christi, Texas.</p>
-					</section>
-				<footer class="entry-footer">Posted by <strong>Dan</strong> on 07.05.2017 at 1:05pm</footer>
-			</article>	
-
+					<button id="add-blog-btn">Add Blog</button>
+				
+			</div>  <!-- END OF ADD DIV -->
+		<div id="spacer"></div>
 	
-			<footer id="page-footer">
+		</div> <!-- END OF CONTAINER -->
+
+		<footer id="page-footer">
 			<p><strong>&copy;2017 Dan Certa</strong></p>
-			</footer>	
+		</footer>
 		</div>
+		<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/loader.js"></script>
+		<script type="text/javascript" src="js/views.js"></script>
+		<script type="text/javascript" src="js/blog.js"></script>
+		<script type="text/javascript" src="js/add.js"></script>
+		<script type="text/javascript" src="js/delete-function.js"></script>
+			
 	</body>
 
 </html>

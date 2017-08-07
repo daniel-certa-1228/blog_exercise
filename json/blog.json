@@ -1,0 +1,42 @@
+[
+	{
+		"Title": "COBOL",
+		"Author": "Dan",
+		"Content": "COBOL (/ˈkoʊbɒl/, an acronym for common business-oriented language) is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments. COBOL is still widely used in legacy applications deployed on mainframe computers, such as large-scale batch and transaction processing jobs. But due to its declining popularity and the retirement of experienced COBOL programmers, programs are being migrated to new platforms, rewritten in modern languages or replaced with software packages.  Most programming in COBOL is now purely to maintain existing applications.  COBOL was designed in 1959 by CODASYL and was partly based on previous programming language design work by Grace Hopper, commonly referred to as 'the (grand)mother of COBOL'.  It was created as part of a US Department of Defense effort to create a portable programming language for data processing. Intended as a stopgap, the Department of Defense promptly forced computer manufacturers to provide it, resulting in its widespread adoption. It was standardized in 1968 and has since been revised four times. Expansions include support for structured and object-oriented programming. The current standard is ISO/IEC 1989:2014.",
+		"Timestamp": "07/19/2017, 7:45:05 PM",
+		"Keywords" : "COBOL, Grace Hopper"
+
+	},
+	{
+		"Title": "André the Giant",
+		"Author": "Dan",
+		"Content": "André René Roussimoff (May 19, 1946 – January 27, 1993), best known as André the Giant, was a French professional wrestler and actor.  He famously feuded with Hulk Hogan, culminating at WrestleMania III. His best-remembered film role was that of Fezzik, the giant in The Princess Bride. His size was a result of gigantism caused by excess growth hormone, which later resulted in acromegaly. It also led to him being called 'The Eighth Wonder of the World'.  In the World Wrestling Federation (WWF, now known as WWE), André was a one-time WWF World Heavyweight Champion and a one-time WWF Tag Team Champion. In 1993, André was the inaugural inductee into the WWE Hall of Fame.",
+		"Timestamp": "07/21/2017, 5:25:36 PM",
+		"Keywords" : "André the Giant, WWE"
+
+	},
+	{
+		"Title": "Mutually Assured Destruction",
+		"Author": "Dan",
+		"Content": "Mutual assured destruction or mutually assured destruction (MAD) is a doctrine of military strategy and national security policy in which a full-scale use of nuclear weapons by two or more opposing sides would cause the complete annihilation of both the attacker and the defender (see pre-emptive nuclear strike and second strike).  It is based on the theory of deterrence, which holds that the threat of using strong weapons against the enemy prevents the enemy's use of those same weapons. The strategy is a form of Nash equilibrium in which, once armed, neither side has any incentive to initiate a conflict or to disarm.",
+		"Timestamp": "07/22/2017, 3:22:42 PM",
+		"Keywords" : "Mutually Assured Destruction, nuclear weapons"
+
+	},
+	{
+		"Title": "Helen Reddy",
+		"Author": "Dan",
+		"Content": "Helen Maxine Lamond Reddy (born 25 October 1941) is an Australian singer, actress and activist. In the 1970s, she enjoyed international success, especially in the United States, where she placed 15 singles in the Top 40 of the Billboard Hot 100. Six made the Top 10 and three reached No. 1, including her signature hit 'I Am Woman'.  She is often referred to as the 'Queen of '70s Pop'.  Reddy placed 25 songs on the Billboard Adult Contemporary chart; 15 made the Top 10 and eight reached No. 1, six consecutively. In 1974, at the inaugural American Music Awards, she became the first artist to win the award for Favorite Pop/Rock Female Artist. She was the first Australian to have three No. 1 hits in the same year. In television, she was the first Australian to host her own one-hour weekly primetime variety show on an American network, along with several specials that were seen in more than 40 countries.",
+		"Timestamp": "07/26/2017, 4:14:56 AM",
+		"Keywords" : "Helen Reddy, Pete's Dragon, I Am Woman"
+
+	},
+	{
+		"Title": "Flowbee",
+		"Author": "Dan",
+		"Content": "The Flowbee is an electrically powered vacuum cleaner attachment made for cutting hair. It was developed and filed for patent in 1986 by Rick E. Hunts, a San Diego, California carpenter. US patent 4679322 was granted in 1987 and the product marketed since 1988. Hunt initially sold the Flowbees out of his garage before finding success with live demonstrations at a county fair. The product was advertised as being capable of performing 'hundreds of precision layered haircuts' in frequently aired late-night television infomercials. By 2000, two million Flowbees had been sold.  The Flowbee can also be used to groom dogs with long hair such as Maltese or Bichon Frisé with a special pet grooming attachment which is sold separately. Previously, a special green-colored Flowbee Pet Groomer variant of the device was available.  Over the years, the Flowbee device saw at least three revisions which can be identified by the shape and labeling of the cutting head ('Vac-u-cut', 'Flowbee Int.', 'Flowbee.com'). It is still being manufactured and sold via their factory direct website and various outlets across the Internet. The Flowbee factory is located in Flour Bluff, a suburb of Corpus Christi, Texas.",
+		"Timestamp": "07/30/2017, 2:46:11 PM",
+		"Keywords" : "Flowbee, haircuts, infomercials"
+
+	}
+]
