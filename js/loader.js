@@ -3,7 +3,7 @@ console.log( "loader.js" );
 {
 	var BlogSpace = {}
 }
-
+//Loads from json
 {
 	BlogSpace.loadBlogInfo = () => {
 

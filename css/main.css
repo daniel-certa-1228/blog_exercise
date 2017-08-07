@@ -85,6 +85,7 @@ article {
 	margin-bottom: 1em;
 	padding: 1em;
 	border-radius: 10px;
+	overflow-wrap: break-word
 }
 
 article:nth-child(odd) {
