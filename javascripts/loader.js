@@ -32,8 +32,4 @@ blogLoader.loadBlogInfo = () => {
 	}
 };
 
-// blogLoader.getBlogs = () => {
-// 	return blogLoader.blogArray;
-// };
-
 module.exports = blogLoader;
