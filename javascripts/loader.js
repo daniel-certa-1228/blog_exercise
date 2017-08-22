@@ -2,8 +2,13 @@
 
 console.log( "loader.js" );
 
+let blogDOM = require('./blog.js');
+
 var blogLoader = {};
-	// Loads from json
+
+blogLoader.blogArray = [];
+console.log( "blogLoader.blogArray", blogLoader.blogArray );
+// Loads from json
 blogLoader.loadBlogInfo = () => {
 
 	blogLoader.blogObject = {};
@@ -16,8 +21,10 @@ blogLoader.loadBlogInfo = () => {
 	function blogLoaderComplete (json) {
 		console.log( "BlogLoader Complete" );
 		blogLoader.blogObject = json; 
-		console.log( "blogObject", blogLoader.blogObject );
-		// BlogSpace.passJSON(blogObject);
+		for (let i = 0; i < blogLoader.blogObject.length; i++) {
+			blogLoader.blogArray.push(blogLoader.blogObject[i]);
+		}
+		blogDOM.outputToDOM(blogLoader.blogArray);
 	}
 
 	function blogLoaderFailed (event) {
@@ -25,8 +32,8 @@ blogLoader.loadBlogInfo = () => {
 	}
 };
 
-blogLoader.getBlogs = () => {
-	return blogLoader.blogObject;
-};
+// blogLoader.getBlogs = () => {
+// 	return blogLoader.blogArray;
+// };
 
 module.exports = blogLoader;

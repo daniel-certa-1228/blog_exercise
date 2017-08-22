@@ -1,34 +1,30 @@
 "use strict";
 
-// console.log( "views.js" );
+console.log( "views.js" );
 
-// let loader = require('./loader.js');
+let viewHandler = {};
 
-// {
-// 	let addBlogEntry = document.getElementById("add-entry");
-// 	let articleDiv = document.getElementById("article-div");
-// 	let listLink = document.getElementById("listView")
-// 	let addLink = document.getElementById("addView")
+$("#listView").click(function(event) {
+	event.preventDefault();
+	viewHandler.listView();
+});
 
-// 	listLink.addEventListener("click", (event) => {
-// 		event.preventDefault();
-// 		BlogSpace.listView();
-// 	});
+$("#addView").click(function(event) {
+	event.preventDefault();
+	viewHandler.addView();
+});
 
-// 	addLink.addEventListener("click", (event) => {
-// 		event.preventDefault();
-// 		BlogSpace.addView();
-// 	});
+viewHandler.listView = () => {
+	$('#add-entry').addClass('hidden');
+	$('#article-div').removeClass('hidden');
+};
 
-// 	BlogSpace.listView = () => {
-// 		addBlogEntry.classList.add("hidden")
-// 		articleDiv.classList.remove("hidden")
-// 	}
+viewHandler.addView = () => {
+	$('#add-entry').removeClass('hidden');
+	$('#article-div').addClass('hidden');
+};
 
-// 	BlogSpace.addView = () => {
-// 		addBlogEntry.classList.remove("hidden")
-// 		articleDiv.classList.add("hidden")
-// 	}
-// }
+module.exports = viewHandler;
+
 
 
