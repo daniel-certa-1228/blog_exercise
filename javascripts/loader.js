@@ -1,13 +1,13 @@
 "use strict";
 
-console.log( "loader.js" );
+// console.log( "loader.js" );
 
 let blogDOM = require('./blog.js');
 
 var blogLoader = {};
 
 blogLoader.blogArray = [];
-console.log( "blogLoader.blogArray", blogLoader.blogArray );
+// console.log( "blogLoader.blogArray", blogLoader.blogArray );
 // Loads from json
 blogLoader.loadBlogInfo = () => {
 

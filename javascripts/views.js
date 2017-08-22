@@ -1,6 +1,6 @@
 "use strict";
 
-console.log( "views.js" );
+// console.log( "views.js" );
 
 let viewHandler = {};
 
