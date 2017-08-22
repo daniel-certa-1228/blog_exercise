@@ -12,75 +12,30 @@ $('#add-blog-btn').click(function(event){
 	let blogContent = $("#blog-content").val();
 	let blogKeywords = $("#blog-keywords").val();
 	let blogTimestamp = new Date();
-	
+
+	if (blogTitle ==="" || blogAuthor ==="" || blogAuthor ==="" ) {
+
+		alert("Please fill in the required fields");
+
+	} else {
+
+	let addBlogObject = 	{
+							"Title": blogTitle,
+							"Author": blogAuthor,
+							"Content": blogContent,
+							"Timestamp": blogTimestamp,
+							"Keywords" : blogKeywords
+							};
+
+						blogLoader.blogArray.push(addBlogObject);
+						blogDOM.outputToDOM(blogLoader.blogArray);
+						viewHandler.listView();
+						$("#blog-title").val("");
+						$("#blog-author").val("");
+						$("#blog-content").val("");
+						$("#blog-keywords").val("");
+	}
 });
-	// let blogTitleField = $("#blog-title");
-	// // console.log( "blogTitleField", blogTitleField );
-	// let blogAuthorField = $("#blog-author");
-	// let blogContentField = $("#blog-content");
-	// let blogKeywordsField = $("#blog-keywords");
-	// let blogTimestamp = new Date();
-
-	// if ($("#blog-title")==="" || blogAuthorField.value==="" || blogContentField.value==="" ) {
-
-	// 	alert("Please fill in the required fields");
-
-	// }  
-	// else  {
-
-	// 	let addBlogObject = 	{
-	// 							"Title": blogTitleField.value,
-	// 							"Author": blogAuthorField.value,
-	// 							"Content": blogContentField.value,
-	// 							"Timestamp": blogTimestamp,
-	// 							"Keywords" : blogKeywordsField.value
-	// 							};
-
-	// 	blogLoader.blogArray.push(addBlogObject);
-	// 	viewHandler.listView();
-	// 	blogDOM.outputToDOM(blogLoader.blogArray);
-	// 	blogTitleField.value = "";
-	// 	blogAuthorField.value = "";
-	// 	blogContentField.value = "";
-	// 	blogKeywordsField.value = "";
-	// }
-
-
-// let blogTitleField = document.getElementById("blog-title");
-// let blogAuthorField = document.getElementById("blog-author");
-// let blogContentField = document.getElementById("blog-content");
-// let blogKeywordsField = document.getElementById("blog-keywords");
-// let blogTimestamp = new Date();
-
-// let addBtn = document.getElementById("add-blog-btn");
-
-// addBtn.addEventListener("click", (event) => {
-
-// 	if (blogTitleField.value==="" || blogAuthorField.value==="" || blogContentField.value==="" ) {
-
-// 		alert("Please fill in the required fields");
-
-// 	}  else  {
-
-// 		let addBlogObject = 	{
-// 								"Title": blogTitleField.value,
-// 								"Author": blogAuthorField.value,
-// 								"Content": blogContentField.value,
-// 								"Timestamp": blogTimestamp,
-// 								"Keywords" : blogKeywordsField.value
-// 								};
-
-// 							// BlogSpace.passNewBlogObject(addBlogObject);
-// 							viewHandler.listView();
-// 							blogTitleField.value = "";
-// 							blogAuthorField.value = "";
-// 							blogContentField.value = "";
-// 							blogKeywordsField.value = "";
-
-// 	}
-
-
-// });
 
 // //////////////////////////////////////////////////////////
 
