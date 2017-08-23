@@ -1,6 +1,6 @@
 "use strict";
 
-console.log( "add.js" );
+// console.log( "add.js" );
 
 let viewHandler = require('./views.js');
 let blogLoader = require('./loader.js');
@@ -27,13 +27,26 @@ $('#add-blog-btn').click(function(event){
 							"Keywords" : blogKeywords
 							};
 
-						blogLoader.blogArray.push(addBlogObject);
-						blogDOM.outputToDOM(blogLoader.blogArray);
-						viewHandler.listView();
-						$("#blog-title").val("");
-						$("#blog-author").val("");
-						$("#blog-content").val("");
-						$("#blog-keywords").val("");
+	blogLoader.addBlogs(addBlogObject)
+		.then((blogID) => {
+			console.log( "blogID", blogID );
+		});
+
+	blogLoader.getBlogs()
+	.then((blogData) => {
+		let blogIdArray = Object.keys(blogData);
+		blogIdArray.forEach((key) => {
+			blogData[key].id = key;
+		});
+		let blogArray = Object.values(blogData);
+		blogDOM.outputToDOM(blogArray);
+	});
+						
+	viewHandler.listView();
+	$("#blog-title").val("");
+	$("#blog-author").val("");
+	$("#blog-content").val("");
+	$("#blog-keywords").val("");
 	}
 });
 

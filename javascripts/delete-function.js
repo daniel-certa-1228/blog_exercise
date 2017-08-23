@@ -8,5 +8,7 @@ var deleteFunction = {};
 
 $('#article-div').click(function(event) {
 	let target = event.target;
-	$(target).closest('article').remove();
+	if (target.className === 'deleteBtn') {
+		$(target).closest('article').remove();
+	}
 });

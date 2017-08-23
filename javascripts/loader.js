@@ -1,35 +1,28 @@
 "use strict";
 
-// console.log( "loader.js" );
-
 let blogDOM = require('./blog.js');
 
-var blogLoader = {};
+function getBlogs() {
+	return new Promise((resolve, reject) =>{
+			$.ajax({
+				url: 'https://nss-blog-project.firebaseio.com/blogs.json'
+			}).done((blogData) => {
+				console.log( "blogData", blogData );
+				resolve(blogData);
+		});
+	});
+}
 
-blogLoader.blogArray = [];
-// console.log( "blogLoader.blogArray", blogLoader.blogArray );
-// Loads from json
-blogLoader.loadBlogInfo = () => {
-
-	blogLoader.blogObject = {};
-
-	$.ajax({
-		url:'../json/blog.json'
-	}).done(blogLoaderComplete)
-	  .fail(blogLoaderFailed);
-
-	function blogLoaderComplete (json) {
-		console.log( "BlogLoader Complete" );
-		blogLoader.blogObject = json; 
-		for (let i = 0; i < blogLoader.blogObject.length; i++) {
-			blogLoader.blogArray.push(blogLoader.blogObject[i]);
-		}
-		blogDOM.outputToDOM(blogLoader.blogArray);
-	}
-
-	function blogLoaderFailed (event) {
-		console.log( "BlogLoader Failed" );
-	}
-};
-
-module.exports = blogLoader;
+function addBlogs(addBlogObject) {
+	return new Promise((resolve, reject) =>{
+			$.ajax({
+				url: 'https://nss-blog-project.firebaseio.com/blogs.json',
+				type: 'POST',
+				data: JSON.stringify(addBlogObject),
+				dataType: 'json'
+			}).done((blogID) =>{
+				resolve(blogID);
+		});
+	});
+}
+module.exports = {addBlogs, getBlogs };
