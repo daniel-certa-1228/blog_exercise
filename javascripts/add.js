@@ -37,19 +37,21 @@ $('#add-blog-btn').click(function(event){
 	}
 });
 
-// //////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
-// 	function addBlogReturnButton(element) {
-// 	element.addEventListener("keypress", function(event) {
-//     if (event.keyCode == 13) {
-//         addBtn.click();
-//     	}
-// 	});
-// }
+function addBlogReturnButton(element) {
+	$(element).keypress(function(event) {
+		if (event.which === 13) {
+			$('#add-blog-btn').click();
+		}
+	});
+}
 
-// 	addBlogReturnButton(blogTitleField);
-// 	addBlogReturnButton(blogAuthorField);
-// 	addBlogReturnButton(blogContentField);
-// 	addBlogReturnButton(blogKeywordsField);
+addBlogReturnButton($("#blog-title"));
+addBlogReturnButton($("#blog-author"));
+addBlogReturnButton($("#blog-content"));
+addBlogReturnButton($("#blog-keywords"));
+
+
 
 
